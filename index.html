@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="icon" type="image/x-icon" href="public/assets/favicon.ico">
+    <title>OOOOBIAAAD!</title>
+</head>
+<body class="bg-pop-background bg-cover">
+    <!-- Content -->
+    <div class="container">
+        <div class="flex justify-center w-full fixed">
+            <p class="bg-white rounded-b-2xl px-10 py-5">🥄&nbsp;&nbsp;<span class="font-Poppins font-semibold text-xl">11:36 - 8D Już na nogach na stołówce...</span></p>
+        </div>
+        <div class="flex justify-end w-full fixed">
+            </p>
+        </div>
+        <div class="flex justify-center w-full fixed bottom-0">
+            <img id="popcat" onmousedown="openMouth()" onmouseup="closeMouth()" src="public/assets/close-mouth.png" alt="">
+        </div>
+        <div class="flex justify-center w-full fixed bottom-0">
+            <input class="bg-white px-10 py-5 rounded-t-2xl font-bold text-lg" id="counter" type="button" value="0">
+        </div>
+        <div class="flex justify-end w-full fixed bottom-0">
+            <h4 class="bg-white px-10 py-5 rounded-tl-2xl text-md text-center">
+                😠 <span class="font-bold">Zdenerwowanie pań ze stołówki</span><br>
+                <span id="mode" class="text-green-600">Normalne</span>
+            </h4>
+        </div>
+    </div>
+
+    <!-- Intro Modal -->
+    <div class="flex justify-center items-center h-screen w-full fixed bg-black bg-opacity-50 z-10" id="targetBegin">
+        <div class="bg-white rounded-2xl shadow-lg w-2/6">
+            <div class="border-b px-4 py-2 flex justify-center">
+                <h3 class="text-center text-xl my-5">👋&nbsp;&nbsp;<span class="font-bold text-xl">Witaj w SP1 Stołówka clicker!</span></h3>
+            </div>
+            <div class="text-center">
+                <p class="p-5">Jest to clicker o stołówce w szkole SP1 w Wasilkowie, ale tutaj masz <span class="font-medium">NAJWAŻNIEJSZE</span>! Gra nie ma na celu urażenia którejś z pań, wszystkie są bardzo fajne i miłe, mimo że czasem wchodzimy na obiad przed czasem to i tak czasami nas wpuszczą :D Gra jest parodią stołówki, proszę nie brać tego na poważnie i nie rozsyłać tego do innych lub znajomych! Dziękuję za małą uwagę!                           PSSSSSSSSSSSSST! Dobij 500 prób (Punktów) aby zobaczyć czy cię wpuszczą!</span><br><br> <span class="font-bold">Powodzonka</span> 😀😉💪</p>
+            </div>
+              <div class="flex justify-center items-center w-100 border-t p-3">
+                <button id="begin" class="bg-green-800 focus:ring-4 focus:ring-green-200 px-3 py-2 my-3 rounded text-white">Zaakceptuj warunki</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Modal 500 Click -->
+    <div class="hidden flex justify-center items-center h-screen w-full fixed bg-black bg-opacity-50 z-10" id="showGIF">
+        <div class="bg-white rounded-2xl shadow-lg w-2/6">
+            <div class="border-b px-4 py-2 flex justify-center">
+                <h3 class="text-center text-md my-5">🎉🎉&nbsp;&nbsp;<span class="font-bold text-md">Mordiiiiniiiiiiii! Udało ci się! Teraz siadaj i wsuwaj pyszne jedzonko ;)</span>&nbsp;&nbsp;🎉🎉</h3>
+            </div>
+            <div class="text-center">
+                <img class="w-full h-full" src="public/assets/windah.gif" alt="">
+            </div>
+              <div class="flex justify-center items-center w-100 border-t p-3">
+                <button id="closeGIF" class="bg-red-800 focus:ring-4 focus:ring-red-200 px-3 py-2 my-3 rounded text-white">Tutup</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="public/js/main.js"></script>
+    <script src="public/js/modal.js"></script>
+</body>
+</html>
